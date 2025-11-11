@@ -1,0 +1,60 @@
+nohup: ignoring input
+=== SRP-6a demo (educacional) ===
+
+Registro:
+ Server armazena: salt = c4a8684b233e808ea7ba5368c5fd6da0 v = 7a912934bd...
+
+Autenticação:
+ Cliente envia A = e3ff5038b0d517ec...
+ Servidor envia B = 1e51aaba5069ca0d... e salt
+
+Valores calculados:
+ u = 16052862129735001666680787040989264433393564996585673002282721039398178171148
+ S (cliente) = c05edf38b1816661...
+ S (servidor) = c05edf38b1816661...
+ K (cliente) = acb83a2aef05efdf...
+ K (servidor) = acb83a2aef05efdf...
+
+Chaves de sessão coincidem!
+
+M1 verificado pelo servidor.
+M2 enviado ao cliente.
+M2 verificado pelo cliente. Autenticação concluída!
+
+=== Fim do demo ===
+ * Serving Flask app 'web_app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.10.29:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 317-137-066
+[2025-11-11 00:13:33,427] DEBUG in web_app: GET / from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:13:33] "GET / HTTP/1.1" 304 -
+[2025-11-11 00:13:34,601] DEBUG in web_app: GET /static/app.js from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:13:34] "GET /static/app.js HTTP/1.1[2025-11-11 00:13:34,603] DEBUG in web_app: GET /static/styles.css from 127.0.0.1
+" 304 -
+127.0.0.1 - - [11/Nov/2025 00:13:34] "GET /static/styles.css HTTP/1.1" 304 -
+[2025-11-11 00:14:26,602] DEBUG in web_app: POST /api/register from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:26] "POST /api/register HTTP/1.1" 200 -
+[2025-11-11 00:14:32,661] DEBUG in web_app: POST /api/client_step1 from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:32] "POST /api/client_step1 HTTP/1.1" 200 -
+[2025-11-11 00:14:35,546] DEBUG in web_app: POST /api/server_step1 from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:35] "POST /api/server_step1 HTTP/1.1" 200 -
+[2025-11-11 00:14:38,528] DEBUG in web_app: POST /api/compute_sessions from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:38] "POST /api/compute_sessions HTTP/1.1" 200 -
+[2025-11-11 00:14:39,365] DEBUG in web_app: POST /api/proofs from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:39] "POST /api/proofs HTTP/1.1" 200 -
+[2025-11-11 00:14:41,438] DEBUG in web_app: POST /api/full_demo from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:41] "POST /api/full_demo HTTP/1.1" 200 -
+[2025-11-11 00:14:45,988] DEBUG in web_app: GET / from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:45] "GET / HTTP/1.1" 200 -
+[2025-11-11 00:14:46,368] DEBUG in web_app: GET /static/styles.css from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:46] "GET /static/styles.css HTTP/1.1" 304 -
+[2025-11-11 00:14:46,382] DEBUG in web_app: GET /static/app.js from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:46] "GET /static/app.js HTTP/1.1" 304 -
+[2025-11-11 00:14:49,231] DEBUG in web_app: POST /api/full_demo from 127.0.0.1
+127.0.0.1 - - [11/Nov/2025 00:14:49] "POST /api/full_demo HTTP/1.1" 200 -
