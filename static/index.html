@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SRP-6a Demo — GUI</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>SRP-6a Demo (educacional)</h1>
+      <section class="controls">
+        <label>Username <input id="username" value="alice"></label>
+        <label>Password <input id="password" value="correct horse battery staple" type="password"></label>
+        <div class="buttons">
+          <button id="btn-register">Registrar (Server)</button>
+          <button id="btn-client-step1">Gerar A (Client)</button>
+          <button id="btn-server-step1">Gerar B (Server)</button>
+          <button id="btn-compute">Calcular Sessões</button>
+          <button id="btn-proofs">Gerar Provas</button>
+          <button id="btn-full">Executar Demo Completo</button>
+          <button id="btn-clear">Limpar</button>
+        </div>
+      </section>
+      <section>
+        <h2>Log</h2>
+        <pre id="log" class="log"></pre>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
