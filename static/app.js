@@ -1,7 +1,7 @@
 const logEl = document.getElementById('log')
 const userEl = document.getElementById('username')
 const passEl = document.getElementById('password')
-
+//Função
 function timeNow(){ return new Date().toLocaleTimeString() }
 
 function append(msg, cls){

@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 2. Execute o servidor:
 
-# SRP-6a Demo — Web GUI
+# SRP-6a Demo — Web GUI //
 
 Pequeno demo educacional do protocolo SRP-6a com UI web (HTML/CSS/JS) e backend em Flask.
 O backend usa o módulo `demo.py` para executar registro, geração de A/B, cálculo de sessão e provas.
