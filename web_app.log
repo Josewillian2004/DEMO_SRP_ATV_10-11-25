@@ -58,3 +58,111 @@ Press CTRL+C to quit
 127.0.0.1 - - [11/Nov/2025 00:14:46] "GET /static/app.js HTTP/1.1" 304 -
 [2025-11-11 00:14:49,231] DEBUG in web_app: POST /api/full_demo from 127.0.0.1
 127.0.0.1 - - [11/Nov/2025 00:14:49] "POST /api/full_demo HTTP/1.1" 200 -
+ * Detected change in '/workspaces/DEMO_SRP_ATV_10-11-25/web_app.py', reloading
+=== SRP-6a demo (educacional) ===
+
+Registro:
+ Server armazena: salt = 266dc3421f15564365487fa26acd5450 v = 4595231baf...
+
+Autenticação:
+ Cliente envia A = cf010d8fef7810f0...
+ Servidor envia B = b6f10347858bda96... e salt
+
+Valores calculados:
+ u = 108227824438149998680650929417955478575978794884623454971877566225013972971452
+ S (cliente) = c67d7c8137f58b83...
+ S (servidor) = c67d7c8137f58b83...
+ K (cliente) = 9e447f2063934e03...
+ K (servidor) = 9e447f2063934e03...
+
+Chaves de sessão coincidem!
+
+M1 verificado pelo servidor.
+M2 enviado ao cliente.
+M2 verificado pelo cliente. Autenticação concluída!
+
+=== Fim do demo ===
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 317-137-066
+ * Detected change in '/workspaces/DEMO_SRP_ATV_10-11-25/web_app.py', reloading
+=== SRP-6a demo (educacional) ===
+
+Registro:
+ Server armazena: salt = c8c14ec42b957ed4486dfbadf723fce3 v = ce6389125f...
+
+Autenticação:
+ Cliente envia A = 83d43664c11f25b1...
+ Servidor envia B = db34758a1f91a95c... e salt
+
+Valores calculados:
+ u = 5884503679198075616669386530060946091139729906891889829708455601824395196523
+ S (cliente) = 1e132369fa5622fe...
+ S (servidor) = 1e132369fa5622fe...
+ K (cliente) = 31216be5e314a1bd...
+ K (servidor) = 31216be5e314a1bd...
+
+Chaves de sessão coincidem!
+
+M1 verificado pelo servidor.
+M2 enviado ao cliente.
+M2 verificado pelo cliente. Autenticação concluída!
+
+=== Fim do demo ===
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 317-137-066
+ * Detected change in '/workspaces/DEMO_SRP_ATV_10-11-25/web_app.py', reloading
+=== SRP-6a demo (educacional) ===
+
+Registro:
+ Server armazena: salt = 1e6526d4ebb7a19bc71c12fdaba875bb v = b9cf0c99f0...
+
+Autenticação:
+ Cliente envia A = ee7e095faba9f30a...
+ Servidor envia B = 64b746196fa38dc0... e salt
+
+Valores calculados:
+ u = 35329364896322709897804996158789081399995774763401445399067274636250249372833
+ S (cliente) = 127e767994f6e303...
+ S (servidor) = 127e767994f6e303...
+ K (cliente) = 5e2ee1f3ca9ce554...
+ K (servidor) = 5e2ee1f3ca9ce554...
+
+Chaves de sessão coincidem!
+
+M1 verificado pelo servidor.
+M2 enviado ao cliente.
+M2 verificado pelo cliente. Autenticação concluída!
+
+=== Fim do demo ===
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 317-137-066
+ * Detected change in '/workspaces/DEMO_SRP_ATV_10-11-25/web_app.py', reloading
+=== SRP-6a demo (educacional) ===
+
+Registro:
+ Server armazena: salt = 39d7e9cdd0c07138a79b768cb019f755 v = 67e47e0e8d...
+
+Autenticação:
+ Cliente envia A = c733b8e1c2f58a94...
+ Servidor envia B = 755c8927b1b992c5... e salt
+
+Valores calculados:
+ u = 98811330049018539958338867707060295628242742525597349025337559598733963020626
+ S (cliente) = a8a56a5c4e328a85...
+ S (servidor) = a8a56a5c4e328a85...
+ K (cliente) = 49ad09146e33f0f6...
+ K (servidor) = 49ad09146e33f0f6...
+
+Chaves de sessão coincidem!
+
+M1 verificado pelo servidor.
+M2 enviado ao cliente.
+M2 verificado pelo cliente. Autenticação concluída!
+
+=== Fim do demo ===
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 317-137-066
