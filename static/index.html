@@ -7,26 +7,46 @@
     <link rel="stylesheet" href="/static/styles.css">
   </head>
   <body>
-    <main>
-      <h1>SRP-6a Demo (educacional)</h1>
-      <section class="controls">
-        <label>Username <input id="username" value="alice"></label>
-        <label>Password <input id="password" value="correct horse battery staple" type="password"></label>
-        <div class="buttons">
-          <button id="btn-register">Registrar (Server)</button>
-          <button id="btn-client-step1">Gerar A (Client)</button>
-          <button id="btn-server-step1">Gerar B (Server)</button>
-          <button id="btn-compute">Calcular Sessões</button>
-          <button id="btn-proofs">Gerar Provas</button>
-          <button id="btn-full">Executar Demo Completo</button>
-          <button id="btn-clear">Limpar</button>
+    <main class="container">
+      <header class="top">
+        <h1>SRP-6a — Demo Educacional</h1>
+        <p class="muted">Teste interativo do fluxo de registro e autenticação SRP (não usar em produção)</p>
+      </header>
+
+      <section class="panel grid">
+        <div class="card form">
+          <label>Username
+            <input id="username" value="alice" autocomplete="username">
+          </label>
+          <label>Password
+            <input id="password" value="correct horse battery staple" type="password" autocomplete="current-password">
+          </label>
+
+          <div class="actions">
+            <button id="btn-register" class="primary">Registrar</button>
+            <button id="btn-client-step1">Gerar A</button>
+            <button id="btn-server-step1">Gerar B</button>
+            <button id="btn-compute">Calcular Sessões</button>
+            <button id="btn-proofs">Gerar Provas</button>
+            <button id="btn-full">Demo Completo</button>
+            <button id="btn-clear" class="ghost">Limpar</button>
+          </div>
+        </div>
+
+        <div class="card logcard">
+          <div class="log-header">
+            <h2>Log</h2>
+            <div class="log-controls">
+              <button id="btn-copy-log" title="Copiar log">Copiar</button>
+            </div>
+          </div>
+          <pre id="log" class="log"></pre>
         </div>
       </section>
-      <section>
-        <h2>Log</h2>
-        <pre id="log" class="log"></pre>
-      </section>
+
+      <footer class="foot muted">Backend: <code>/api/*</code> · servidor em Flask (desenvolvimento)</footer>
     </main>
-    <script src="/static/app.js"></script>
+
+    <script src="/static/app.js" defer></script>
   </body>
 </html>

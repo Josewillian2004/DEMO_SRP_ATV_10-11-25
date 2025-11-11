@@ -3,7 +3,7 @@ import binascii
 import os
 import demo
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 # Estado em memória (demo simples, apenas para interface educacional)
 state = {
@@ -26,9 +26,29 @@ def to_hex(x):
     return str(x)
 
 
+@app.after_request
+def add_cors_headers(response):
+    # Permitir chamadas do frontend (útil durante desenvolvimento)
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
+
+
+@app.before_request
+def log_request():
+    app.logger.debug(f"{request.method} {request.path} from {request.remote_addr}")
+
+
 @app.route('/')
 def index():
     return send_from_directory('static', 'index.html')
+
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    # Servir arquivos estáticos explicitamente — evita 404 em alguns ambientes
+    return send_from_directory('static', filename)
 
 
 @app.route('/api/register', methods=['POST'])
